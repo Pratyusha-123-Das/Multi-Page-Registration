@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Nettantra Assignment</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <form name="form2" method="post" onsubmit="return validateForm2()" action="link">
+        <!-- form body -->
+        <div class="form-body">
+            <div class="horizontal-group">
+                <!-- HSC Institute name -->
+                <div class="form-group">
+                    <label for="institute name" class="label-title required">HSC Institute name</label>
+                    <input type="text" name="Hinstitute-name" class="form-input" required="required">
+                </div>
+                <!-- HSC Board -->
+                <div class="horizontal-group">
+                    <div class="form-group ">
+                        <label class="label-title required">HSC Board</label>
+                        <div class="input-group">
+                            <label for="CBSC" id="CBSC">
+                                <input type="radio" name="SSC-Board" value="CBSC" id="CBSC">CBSC</label>
+                            <label for="ICSC" id="ICSC">
+                                <input type="radio" name="SSC-Board" value="ICSC" id="ICSC">ICSC</label>
+                            <label for="State Board" id="State-Board">
+                                <input type="radio" name="SSC-Board" value="State Board" id="State-Board">State
+                                Board</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- HSC Score -->
+                <div class="form-group">
+                    <label for="HSC Score" class="label-title required">HSC Score(in percentage)</label>
+                    <input type="number" min="0" max="100" name="HSC-Score" class="form-input" required="required">
+                </div>
+                <!-- SSC Institute name -->
+                <div class="form-group">
+                    <label for="institute name" class="label-title required">SSC Institute name</label>
+                    <input type="text" name="Sinstitute-name" class="form-input" required="required">
+                </div>
+                <!-- SSC Board -->
+                <div class="horizontal-group">
+                    <div class="form-group ">
+                        <label class="label-title required">SSC Board</label>
+                        <div class="input-group">
+                            <label for="CBSC" id="CBSC">
+                                <input type="radio" name="SSC-Board" value="CBSC" id="CBSC">CBSC</label>
+                            <label for="ICSC" id="ICSC">
+                                <input type="radio" name="SSC-Board" value="ICSC" id="ICSC">ICSC</label>
+                            <label for="State Board" id="State-Board">
+                                <input type="radio" name="SSC-Board" value="State Board" id="State-Board">State
+                                Board</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- SSC Score -->
+                <div class="form-group">
+                    <label for="SSC Score" class="label-title required">SSC Score(in percentage)</label>
+                    <input type="number" min="0" max="100" name="SSC-Score" class="form-input" required="required">
+                </div>
+                <!-- Currently Pursuing -->
+                <div class="form-group">
+                    <label for="Currently Pursuing" class="label-title required">Currently Pursuing</label>
+                    <input type="text" name="currently-pursuing" class="form-input" required="required">
+                </div>
+                <!-- Current Institute -->
+                <div class="form-group">
+                    <label for="Current Institute" class="label-title required">Current Educational Institute
+                        Name</label>
+                    <input type="text" name="current-institute" class="form-input" required="required">
+                </div>
+                <!-- Overall Percentage -->
+                <div class="form-group">
+                    <label for="Overall Percentage" class="label-title required">Overall Percentage</label>
+                    <input type="number" name="overall-percentage" class="form-input" required="required">
+                </div>
+                <!-- Current Backlogs -->
+                <div class="form-group">
+                    <label for="Current Backlogs" class="label-title ">Current Backlogs, if Any</label>
+                    <input type="text" name="current-backlogs" class="form-input">
+                </div>
+            </div>
+            <!-- form footer -->
+            <div class="form-footer">
+                
+            </div>
+    </form>
+    <a href="index1.html">
+        <button type="button" class="btn" onclick="validateForm1(-1);">Previous</button>
+    </a>
+</body>
+    <a href="index3.html">
+        <button type="button" class="btn" onclick="validateForm2(this);">Next</button>
+    </a>
+</body>
+
+</html>

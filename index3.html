@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Nettantra Assignment</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form name="form3" method="post">
+        <!-- form body -->
+        <div class="form-body">
+            <div class="horizontal-group">
+                <div class="form-group ">
+                    <label for="choose-file" class="label-title">Recent Passport Size Photograph (Image size less than
+                        4mb)</label>
+                    <input type="file" accept="image/*" id="choose-file" size="80">
+                </div>
+                <div class="form-group ">
+                    <label for="choose-file" class="label-title">HSC Marksheet (Image,PDF or docs size less than
+                        4mb)</label>
+                    <input type="file" accept="image/*,.pdf,.doc" id="choose-file" size="80">
+                </div>
+                <div class="form-group ">
+                    <label for="choose-file" class="label-title">SSC Marksheet (Image,PDF or docs size less than
+                        4mb)</label>
+                    <input type="file" accept="image/*,.pdf,.doc" id="choose-file" size="80">
+                </div>
+                <div class="form-group ">
+                    <label for="choose-file" class="label-title">All Semester Marksheet in a single pdf or doc (File
+                        size less than 10 mb)</label>
+                    <input type="file" accept=".pdf,.doc" id="choose-file" size="80">
+                </div>
+            </div>
+        </div>
+        <!-- form footer -->
+        <div class="form-footer">
+            <div class="container">
+            <button type="submit" class="btn" onclick="openPopup();">Submit</button>
+            <div class="popup" id="popup">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted</p>
+                <button type="button"  class="btn" onclick="closePopup();">ok</button>
+            </div>
+            </div>
+        </div>
+        
+    </form>
+    
+</body>
+
+</html>
